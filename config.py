@@ -1,4 +1,4 @@
-host = '46.38.56.73'
-dbname = 'HOTSPOT'
-user = 'hotspot'
+host = '192.168.238.28'
+dbname = 'hotspot'
+user = 'hot'
 password = 'Aorbyboi1'

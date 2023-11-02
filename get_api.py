@@ -58,7 +58,7 @@ try:
         # cursor.execute(
         #     "SELECT version();"
         # )
-        find_select = 'SELECT personal_account FROM user_hotspot WHERE personal_account = %s'
+        find_select = 'SELECT personal_account FROM hotspot_list WHERE personal_account = %s'
         params = (ab_id,)
         cursor.execute(find_select, params)
         result_fetchone = cursor.fetchone()
@@ -69,7 +69,7 @@ try:
         # elif result_fetchone is not None and ab_lk_password != ab_lk_password:   
 
         else:
-            query = 'INSERT INTO user_hotspot (personal_account, password_account) VALUES (%s, %s);'
+            query = 'INSERT INTO hotspot_list (personal_account, password) VALUES (%s, %s);'
             data = (ab_id, ab_lk_password)
             cursor.execute(query, data)
         # query = 'INSERT INTO user_hotspot (personal_account, password_account) VALUES (%s, %s);'
