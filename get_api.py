@@ -85,3 +85,5 @@ finally:
         # cursor.close()  закрываем если использунем в виде переменной .. для менеджера контекста with это не нужно .
         connection.close()
         print('[INFO] SQL connect close')
+
+# sdfsdf
