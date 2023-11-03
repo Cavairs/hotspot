@@ -58,7 +58,7 @@ try:
         # cursor.execute(
         #     "SELECT version();"
         # )
-        find_select = 'SELECT personal_account FROM hotspot_list WHERE personal_account = %s'
+        find_select = 'SELECT nasname FROM nas WHERE nasname = %s'
         params = (ab_id,)
         cursor.execute(find_select, params)
         result_fetchone = cursor.fetchone()
@@ -66,10 +66,10 @@ try:
             print(ab_lk_password)
             print('Такое уже есть ')
 
-        # elif result_fetchone is not None and ab_lk_password != ab_lk_password:   
+        # elif result_fetchone is not None and ab_lk_password != ab_lk_password:
 
         else:
-            query = 'INSERT INTO hotspot_list (personal_account, password) VALUES (%s, %s);'
+            query = 'INSERT INTO nas (nasname, secret) VALUES (%s, %s);'
             data = (ab_id, ab_lk_password)
             cursor.execute(query, data)
         # query = 'INSERT INTO user_hotspot (personal_account, password_account) VALUES (%s, %s);'
@@ -78,7 +78,7 @@ try:
 
 except Exception as ex:
     print('Error', ex)
-    
+
 
 finally:
     if connection:
