@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="referrer" content="no-referrer"/>
+<title>Авторизация в сети WiFi</title>
+</head>
+<body>
+<form name="redirect" action="https://hotspot.cpx.ru/$(server-name)/success" method="GET">
+<input type="hidden" name="dst" value="$(link-orig)" />
+</form>
+<script language="JavaScript"> 
+<!--
+ setTimeout(function(){document.redirect.submit();}, 1000);
+ //-->
+</script>
+</body>
+</html>
