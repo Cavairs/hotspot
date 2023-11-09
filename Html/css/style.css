@@ -1,0 +1,43 @@
+/* html {
+    color: #000;
+    ;
+}
+ */
+
+body {
+    background-color: black;
+    margin: 0px 0px 0px 0px;
+}
+
+.container {
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.logo-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+
+
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    /* margin: 0 auto; */
+    border: none;
+}
